@@ -1,10 +1,9 @@
 {
   "name": "vega-atom",
   "main": "./lib/vega-atom",
-  "version": "0.0.0",
-  "description": "A package for opening vega files in atom",
-  "keywords": [
-  ],
+  "version": "0.0.2",
+  "description": "A package for rendering vega and vega-lite specs in atom",
+  "keywords": [ "vega", "vega-lite" ],
   "activationCommands": {
     "atom-workspace": "vega-atom:toggle"
   },

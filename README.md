@@ -1,12 +1,14 @@
 # vega-atom package
 
-Display vega and vega-lite data in atom
+Render vega and vega-lite specs in [atom](https://atom.io/)
 
-This is the source code for vega-atom package
 
-## Development Notes
+## Current features
+* Valid vega-lite specs are displayed in the side panel, triggered by the 'ctrl-alt-z' keybinding.
+* If ctrl-alt-z is triggered on a normal file a default plot is displayed with a title indicating it is invalid.
+
+## Origin
 * Started from the atom
   * _active-editor-info_ example atom package
   * _vega-desktop_ node package
-* changed everything to vega-atom
-* static-chart.js currently has data to be displayed
+* Used the loophole package to adjust atom's Content Security Policy for the required packages
