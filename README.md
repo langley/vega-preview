@@ -3,7 +3,7 @@
 Render vega-lite specs in [atom](https://atom.io/)
 
 
-## Current features
+## Current Features
 * Valid vega-lite specs are displayed in the side panel, triggered by the 'ctrl-alt-z' keybinding.
 * If ctrl-alt-z is triggered on a "non" vega-spec file a blank "page" is rendered.
 * data can come from a local data file and can be specified via a relative file://url. See the examples in the data directory.
