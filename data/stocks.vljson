@@ -1,5 +1,6 @@
 {
-  "description": "Stock prices of 5 Tech Companies Over Time.",
+  "description": "Updated Stock prices of 5 Tech Companies Over Time.",
+  "title": "Updated Stock prices of 5 Tech Companies Over Time.",
   "data": {"url": "file:///home/langley/github/vega-atom/data/stocks.csv", "format": {"type": "csv"}},
   "mark": "line",
   "encoding": {
