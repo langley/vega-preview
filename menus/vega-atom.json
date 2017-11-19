@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle vega-atom",
-        "command": "vega-atom:toggle"
+        "label": "Toggle vega-preview",
+        "command": "vega-preview:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "vega-atom",
+          "label": "vega-preview",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "vega-atom:toggle"
+              "command": "vega-preview:toggle"
             }
           ]
         }

@@ -1,6 +1,6 @@
 'use babel';
 
-import VegaAtom from '../lib/vega-atom';
+import VegaAtom from '../lib/vega-preview';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('VegaAtom', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('vega-atom');
+    activationPromise = atom.packages.activatePackage('vega-preview');
   });
 
-  describe('when the vega-atom:toggle event is triggered', () => {
+  describe('when the vega-preview:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.vega-atom')).not.toExist();
+      expect(workspaceElement.querySelector('.vega-preview')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'vega-atom:toggle');
+      atom.commands.dispatch(workspaceElement, 'vega-preview:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.vega-atom')).toExist();
+        expect(workspaceElement.querySelector('.vega-preview')).toExist();
 
-        let activeEditorInfoElement = workspaceElement.querySelector('.vega-atom');
+        let activeEditorInfoElement = workspaceElement.querySelector('.vega-preview');
         expect(activeEditorInfoElement).toExist();
 
         let activeEditorInfoPanel = atom.workspace.panelForItem(activeEditorInfoElement);
         expect(activeEditorInfoPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'vega-atom:toggle');
+        atom.commands.dispatch(workspaceElement, 'vega-preview:toggle');
         expect(activeEditorInfoPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('VegaAtom', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.vega-atom')).not.toExist();
+      expect(workspaceElement.querySelector('.vega-preview')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'vega-atom:toggle');
+      atom.commands.dispatch(workspaceElement, 'vega-preview:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('VegaAtom', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let activeEditorInfoElement = workspaceElement.querySelector('.vega-atom');
+        let activeEditorInfoElement = workspaceElement.querySelector('.vega-preview');
         expect(activeEditorInfoElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'vega-atom:toggle');
+        atom.commands.dispatch(workspaceElement, 'vega-preview:toggle');
         expect(activeEditorInfoElement).not.toBeVisible();
       });
     });

@@ -1,13 +1,13 @@
 {
-  "name": "vega-atom",
-  "main": "./lib/vega-atom",
+  "name": "vega-preview",
+  "main": "./lib/vega-preview",
   "version": "0.0.2",
   "description": "A package for rendering vega and vega-lite specs in atom",
   "keywords": [ "vega", "vega-lite" ],
   "activationCommands": {
-    "atom-workspace": "vega-atom:toggle"
+    "atom-workspace": "vega-preview:toggle"
   },
-  "repository": "https://github.com/atom/vega-atom",
+  "repository": "https://github.com/atom/vega-preview",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -22,6 +22,6 @@
     "vega-util": "^1.6.2"
   },
   "deserializers": {
-    "vega-atom/VegaAtomView": "deserializeVegaAtomView"
+    "vega-preview/VegaAtomView": "deserializeVegaAtomView"
   }
 }
