@@ -1,9 +1,12 @@
+## 0.2.1 - Okay, okay... I'm starting to "get it"
+* the apm publish command updates your package.json! 
+
 ## 0.1.1 - Messed up the apm publishing
 * the package.json was set to verion 0.1.0 but the change log read 0.0.2!
 * Note: this version supports both vega and vega-lite specs.
 * There's still an issue with not rendering when a file is initially selected
   from the project pane. If you tab to a different file and then back to the
-  the newly previewed file, it renders properly. 
+  the newly previewed file, it renders properly.
 
 
 ## 0.0.2 - Basic functionality is working
