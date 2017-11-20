@@ -1,7 +1,7 @@
 {
   "name": "vega-preview",
   "main": "./lib/vega-preview",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A package for rendering vega and vega-lite specs in atom",
   "keywords": [
     "vega",
