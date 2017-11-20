@@ -1,11 +1,11 @@
 # vega-preview package
 
-Render vega-lite specs in [atom](https://atom.io/)
+Render vega and vega-lite specs in [atom](https://atom.io/)
 
 
 ## Current Features
-* Valid vega-lite specs are displayed in the side panel, triggered by the 'ctrl-alt-z' keybinding.
-* If ctrl-alt-z is triggered on a "non" vega-spec file a blank "page" is rendered.
+* Valid vega and vega-lite specs are displayed in the side panel, triggered by the 'ctrl-alt-v' keybinding.
+* If ctrl-shift-v is triggered on a "non" vega-spec file a blank "tab" is rendered.
 * data can come from a local data file and can be specified via a relative file://url. See the examples in the data directory.
 
 ## Origin

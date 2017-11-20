@@ -1,6 +1,6 @@
 ## 0.0.2 - Basic functionality is working
-* Open a valid vega-lite spec in atom,
-* use the keybinding: crtrl-alt-z to render the spec currently open in the editor in a side panel,
+* Open a valid vega or vega-lite spec in atom,
+* use the keybinding: crtrl-alt-v to render the spec currently open in the editor in a side panel,
 * The data directory has some simple examples and
   the data needed to drive them.
 * The data spec can use relative urls, see the examples.

@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-z": "vega-preview:toggle"
+    "ctrl-shift-v": "vega-preview:toggle"
   }
 }
