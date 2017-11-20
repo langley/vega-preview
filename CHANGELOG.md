@@ -1,3 +1,11 @@
+## 0.1.1 - Messed up the apm publishing
+* the package.json was set to verion 0.1.0 but the change log read 0.0.2!
+* Note: this version supports both vega and vega-lite specs.
+* There's still an issue with not rendering when a file is initially selected
+  from the project pane. If you tab to a different file and then back to the
+  the newly previewed file, it renders properly. 
+
+
 ## 0.0.2 - Basic functionality is working
 * Open a valid vega or vega-lite spec in atom,
 * use the keybinding: crtrl-alt-v to render the spec currently open in the editor in a side panel,
