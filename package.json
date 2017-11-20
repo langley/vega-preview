@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "vega-preview:toggle"
   },
-  "repository": "https://github.com/atom/vega-preview",
+  "repository": "https://github.com/langley/vega-preview",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
