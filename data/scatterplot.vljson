@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
-  "data": {"url": "file://./data/cars.json"},
+  "data": {"url": "file://./cars.json"},
   "mark": "circle",
   "encoding": {
     "x": {"field": "Horsepower", "type": "quantitative"},

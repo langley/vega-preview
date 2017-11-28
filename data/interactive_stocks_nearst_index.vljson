@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
   "width": 600,
   "height": 300,
-  "data": {"url": "file://./data/stocks.csv"},
+  "data": {"url": "file://./stocks.csv"},
   "layer": [
     {
       "mark": "line",

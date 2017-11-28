@@ -11,7 +11,7 @@
         },
         {
             "name": "source_0",
-            "url": "file://./data/stocks.csv",
+            "url": "file://./stocks.csv",
             "format": {
                 "type": "csv"
             }
