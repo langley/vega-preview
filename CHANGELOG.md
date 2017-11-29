@@ -1,5 +1,10 @@
+## 0.3
+* Added support for relative urls in specs.
+* Moved the data directory to the examples directory to be   
+  consistent with other atom plugins. 
+
 ## 0.2.1 - Okay, okay... I'm starting to "get it"
-* the apm publish command updates your package.json! 
+* the apm publish command updates your package.json!
 
 ## 0.1.1 - Messed up the apm publishing
 * the package.json was set to verion 0.1.0 but the change log read 0.0.2!
